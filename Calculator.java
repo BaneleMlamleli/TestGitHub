@@ -14,6 +14,16 @@ public class Calculator{
 		}
 	}
 	
+	//Multiplication method
+	public static void getMultiplication(double firstNum, double secNum){
+		System.out.println(firstNum+" X "+secNum+" = "+(firstNum * secNum));	
+	}
+	
+	//Subtraction method
+	public static void getSubtraction(double firstNum, double secNum){
+		System.out.println(firstNum+" - "+secNum+" = "+(firstNum - secNum));	
+	}	
+	
 	public static void main(String[]args){
 		java.util.Scanner objConsole = new java.util.Scanner(System.in);
 		System.out.print("Enter first value: ");
@@ -23,4 +33,8 @@ public class Calculator{
 		System.out.println("----------------------");
 		getDivision(firstValue, secondValue);
 		getAddition(firstValue,secondValue);
+		getMultiplication(firstValue, secondValue);
+		getSubtraction(firstValue,secondValue);
 	}
+
+}
