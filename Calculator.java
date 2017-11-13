@@ -15,6 +15,12 @@ public class Calculator{
 	}
 	
 	public static void main(String[]args){
-		java.util.Scanner console = new java.util.Scanner(System.in);
-		getAddition(2,5);
+		java.util.Scanner objConsole = new java.util.Scanner(System.in);
+		System.out.print("Enter first value: ");
+		double firstValue = objConsole.nextDouble();
+		System.out.print("Enter second value: ");
+		double secondValue = objConsole.nextDouble();
+		System.out.println("----------------------");
+		getDivision(firstValue, secondValue);
+		getAddition(firstValue,secondValue);
 	}
